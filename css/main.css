@@ -1,9 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
-    h1, p {
+
+h1, p {
     font-family: 'Nothing You Could Do', cursive, Arial, Helvetica, sans-serif;
     color: #FFF;
     text-shadow: 0 4px 3px rgba(0, 0, 0, 1), 0 8px 13px rgba(0, 0, 0, 1), 0 18px 23px rgba(0, 0, 0, 1);
 }
+
 #coverOne {
     background: url(../images/lost_and_found_one.png) center center no-repeat fixed #000;
     -webkit-background-size: cover;
@@ -16,11 +18,14 @@
     width: 100%;
     height: auto;
 }
+
 #coverThree, #coverTwo {
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     height: auto;
-    width: 100%}
+    width: 100%
+}
+
 #coverTwo {
     background: url(../images/lost_and_found_two.png) center center no-repeat fixed #000;
     -webkit-background-size: cover;
@@ -29,6 +34,7 @@
     background-size: cover;
     transform: translateZ(0);
 }
+
 #coverThree {
     background: url(../images/lost_and_found_three) center center no-repeat fixed #000;
     -webkit-background-size: cover;
@@ -37,6 +43,7 @@
     background-size: cover;
     transform: translateZ(0);
 }
+
 #coverFour {
     background: url(../images/lost_and_found_four.png) center center no-repeat fixed #000;
     -webkit-background-size: cover;
@@ -49,34 +56,92 @@
     width: 100%;
     height: auto;
 }
+
 h1 {
     font-size: 2.125em;
 }
+
 p {
     font-size: 1.75em;
 }
+
 .section {
     clear: both;
     padding: 0;
     margin: 0;
-}
+    }
+
 .col {
     display: block;
     float: left;
-    margin: 1% 0 1% 1.6%}
+    margin: 1% 0 1% 1.6%;
+}
+
 .col:first-child {
     margin-left: 0;
 }
+
 .fullPage {
-    width: 100%}
+    width: 100%;
+}
+
 .halfPage {
-    width: 66.1%}
+    width: 66.1%
+}
+
 .quarterPage {
-    width: 32.2%}
+    width: 32.2%
+}
+
 @media only screen and (max-width:30.000em) {
     .col {
     margin: 1% 0;
 }
+
 .fullPage, .halfPage, .quarterPage {
     width: 100%}
+
+/* TWITTER STYLES */
+.twitter-tweet {
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 10px;
+}
+    
+.name {
+    font-family: 'Nothing You Could Do', cursive, Arial, Helvetica, sans-serif;
+    font-size: 26px; 
+}
+
+.avatar {
+    float: left;
+    margin: 20px 10px 10px 10px;
+        height: 130px; 
+        border-radius: 10px;
+}
+
+a:link {
+    color: #CCC;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #CCC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #CCC;
+}
+
+.tweetPosition {
+    position: absolute;
+    top: 200px;
 }
