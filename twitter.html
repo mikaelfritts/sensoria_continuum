@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>TITLE HERE</title>
+		<title>Sensoria Exhibit</title>
 		<meta name="generator" content="CPCC ITS SSD" />
 		<meta name="author" content="Mikael C. Fritts">
 		<meta name="description" content="">
@@ -13,56 +13,67 @@
 			<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <style>
+      .tweet {
+        border-bottom: 1px solid #e1e8ed;
+        cursor: pointer;
+      }
+      .account, .tweet, .app {
+        position: relative;
+        min-height: 51px;
+        padding: 9px 12px;
+        border-bottom: 1px solid #e1e8ed;
+      }
 
-
-	<style>
-.tweet {
-    border-bottom: 1px solid #e1e8ed;
-    cursor: pointer;
-}
-
-.account, .tweet, .app {
-    position: relative;
-    min-height: 51px;
-    padding: 9px 12px;
-    border-bottom: 1px solid #e1e8ed;
-}
-.in-reply-to > ol > li, li.stream-item, .tweets-wrapper li, .recent-tweets li {
-    line-height: inherit;
-}
-ol > li {
-    line-height: 20px;
-}
-li {
-    text-align: inherit;
-}
-.stream, .stream-container, .stream-items {
-    list-style: none;
-}
-ol {
-    list-style: decimal;
-}
-ol, ul {
-    list-style: none;
-}
-	</style>
-
-
-
+      .twitter-tweet li {
+        font-size: 3rem;
+      }
+      .in-reply-to > ol > li, li.stream-item, .tweets-wrapper li, .recent-tweets li {
+        line-height: inherit;
+      }
+      ol > li {
+        line-height: 20px;
+      }
+      li {
+        text-align: inherit;
+      }
+      .stream, .stream-container, .stream-items {
+        list-style: none;
+      }
+      ol {
+        list-style: decimal;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      .twitter-tweet {
+        list-style: none; padding:0; margin: 0 0 24px;}
+      .twitter-tweet li {display: none;}
+    </style>
+    <script type="text/javascript" src="js/jquery.textrotator.min.js"></script> 
+    <script>
+      $(function(){
+          $('#tweets').textRotator({
+              random : true,
+              fadeIn : 1000,
+              fadeOut : 500,
+              duration : 10000,
+              debug : false
+          })
+        })
+    </script>
 	</head>
-
-	<body id="coverOne">
-
-<div class="section group">
-	<div class="col fullPage">
 	<!-- CONTENT -->
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh no you guys. Kanye took my phone for like 2 seconds. I am so sorry. I love Chloe Moretz!</p>&mdash; Eliza Skinner (@elizaskinner) <a href="https://twitter.com/elizaskinner/status/707257897147740161">March 8, 2016</a></blockquote>
-
-
-	<!-- END CONTENT -->
-	</div>
-</div>
-
+	<body id="coverOne">
+    <ul class="twitter-tweet" id="tweets">
+      <li>Curabitur lorem mauris, consequat elementum dui id, pharetra pulvinar augue. Praesent id dui laoreet, hendrerit elit in, blandit leo. Quisque odio - @pt_cruzer</li>
+      <li>Cras lacus mauris, mollis a vestibulum sit amet, viverra eget nibh. Quisque sit amet laoreet enim - @lil_marco</li>
+      <li>Suspendisse in odio vel justo egestas tristique. Quisque ultricies odio ac ex blandit, eget aliquet arcu vehicula. Etiam placerat - @trumpet_hands </li>
+      <li>Aenean a diam non purus dignissim pulvinar eget elementum augue. Ut augue tortor, vestibulum eu ipsum dictum, tristique congue ante - @it_berns</li>
+      <li>Vivamus enim est, cursus euismod nisl blandit, euismod eleifend diam. Integer non congue tortor. Nam erat purus - @capitol_hillary </li>
+    </ul>
+    <!-- END CONTENT -->
 	</body>
 </html>
